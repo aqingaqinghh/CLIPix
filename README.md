@@ -1,13 +1,13 @@
-# EdgeCLIP: Injecting Edge-Awareness into Visual-Language Models for Zero-Shot Semantic Segmentation
+# Teaching CLIP to Localize at Pixel Level
 
 📢Thanks for your interest in our work!
 
-Jiaxiang Fang, Shiqiang Ma, Guihua Duan, Fei Guo, Shengfeng He
+Jiaxiang Fang, Shiqiang Ma, Siyu Chen, Fei Guo, Shengfeng He
 
 ![Alt text](./model.png)
 
 
-> **Abstract:** Effective segmentation of unseen categories in zero-shot semantic segmentation is hindered by models' limited ability to interpret edges in unfamiliar contexts. In this paper, we propose EdgeCLIP, which addresses this by integrating CLIP with explicit edge-awareness. Based on the premise that edge variation patterns are similar across both seen and unseen objects, EdgeCLIP introduces the Contextual Edge Sensing module. This module accurately discerns and utilizes edge information, which is crucial in complex border areas where conventional models struggle. Further, our Text-Guided Dense Feature Matching strategy precisely aligns text encodings with corresponding visual edge features, effectively distinguishing them from background edges. This strategy not only optimizes the training of CLIP's image and text encoders but also leverages the intrinsic completeness of objects, enhancing the model's ability to generalize and accurately segment objects in unseen classes. EdgeCLIP significantly outperforms the current state-of-the-art method, achieving a deep impressive margin of **5.8%** and **17.5%** on PASCAL-5<sup>i</sup> and COCO-20<sup>i</sup> datasets respectively.
+> **Abstract:** Large-scale Vision-Language Models like CLIP have demonstrated impressive open-set localization capabilities at the image level. However, adapting this capability to pixel-level dense prediction poses challenges due to global feature biases. In this paper, we introduce CLIPix, a simple yet effective framework that ‘teaches’ CLIP to perform pixel-level localization. By tracing back CLIP’s classification process, CLIPix identifies object-specific attentive regions and repurposes them as pixellevel localization cues. To address noise introduced by global biases, we propose a Noise-Resistant Self-Correction strategy, refining these cues for more precise segmentation. Additionally, we introduce a Localization Embedding strategy to integrate both localization and enriched detail information, enabling accurate, high-resolution segmentation. Our approach preserves CLIP’s generalization strength and unlocks its potential for segmenting arbitrary objects. Extensive experiments on the PASCAL and COCO datasets demonstrate that CLIPix achieves state-of-theart performance, underscoring its effectiveness.
    
 ## Installation
 
