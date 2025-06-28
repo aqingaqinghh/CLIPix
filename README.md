@@ -1,13 +1,13 @@
-# Teaching CLIP to Localize at Pixel Level
+# Repurposing CLIP to Localize at Pixel Level
 
 📢Thanks for your interest in our work!
 
-Jiaxiang Fang, Shiqiang Ma, Siyu Chen, Fei Guo, Shengfeng He
+Jiaxiang Fang, Shiqiang Ma, Jing Wang, Siyu Chen, Fei Guo, Shengfeng He
 
 ![Alt text](./model.png)
 
 
-> **Abstract:** Large-scale Vision-Language Models like CLIP have demonstrated impressive open-set localization capabilities at the image level. However, adapting this capability to pixel-level dense prediction poses challenges due to global feature biases. In this paper, we introduce CLIPix, a simple yet effective framework that ‘teaches’ CLIP to perform pixel-level localization. By tracing back CLIP’s classification process, CLIPix identifies object-specific attentive regions and repurposes them as pixellevel localization cues. To address noise introduced by global biases, we propose a Noise-Resistant Self-Correction strategy, refining these cues for more precise segmentation. Additionally, we introduce a Localization Embedding strategy to integrate both localization and enriched detail information, enabling accurate, high-resolution segmentation. Our approach preserves CLIP’s generalization strength and unlocks its potential for segmenting arbitrary objects. Extensive experiments on the PASCAL and COCO datasets demonstrate that CLIPix achieves state-of-theart performance, underscoring its effectiveness.
+> **Abstract:** Large-scale Vision-Language Models like CLIP have demonstrated impressive open-set localization capabilities at the image level. However, adapting this capability to pixel-level dense prediction poses challenges due to global feature biases. In this paper, we introduce CLIPix, a simple yet effective framework that ‘repurposes’ CLIP to perform pixel-level localization. By tracing back CLIP’s classification process, CLIPix identifies object-specific attentive regions and repurposes them as pixel level localization cues. To address noise introduced by global biases, we propose a Noise-Resistant Self-Correction strategy, refining these cues for more precise segmentation. Additionally, we introduce a Localization Embedding strategy to integrate both localization and enriched detail information, enabling accurate, high-resolution segmentation. Our approach preserves CLIP’s generalization strength and unlocks its potential for segmenting arbitrary objects. Extensive experiments on the PASCAL and COCO datasets demonstrate that CLIPix achieves state-of-the-art performance, underscoring its effectiveness.
    
 ## Installation
 
